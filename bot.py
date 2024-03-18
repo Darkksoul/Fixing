@@ -203,7 +203,7 @@ async def start_handler(c: Client, m: Message):
    if Fsub == 400:
         return
    await m.reply_text(
-        text=f"Hɪ **⚡ I ᴀᴍ ᴀ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴍᴇʀɢᴇʀ ʙᴏᴛ\n\n😎 I ᴄᴀɴ ᴍᴇʀɢᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇs!, ᴀɴᴅ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ Bot Owner @i_manjot_sidhu\n\n/help ғᴏʀ ʜᴏᴡ ᴛᴏ ᴜsᴇ\n\n**Oᴡɴᴇʀ: 🈲 @{Config.OWNER_USERNAME}**",
+        text=f"Hɪ **⚡ I ᴀᴍ ᴀ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴍᴇʀɢᴇʀ ʙᴏᴛ\n\n😎 I ᴄᴀɴ ᴍᴇʀɢᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇs!, ᴀɴᴅ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ Bot Owner @DevilServers\n\n/help ғᴏʀ ʜᴏᴡ ᴛᴏ ᴜsᴇ\n\n**Oᴡɴᴇʀ: 🈲 @{Config.OWNER_USERNAME}**",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Cʟᴏsᴇ 🔐", callback_data="close")]]
@@ -492,7 +492,7 @@ async def about_handler(c: Client, m: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-			InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/nordbotz"),
+			InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/DevilServers),
 		        InlineKeyboardButton("🤔 Dᴇᴘʟᴏʏᴇᴅ ʙʏ", url=f"https://t.me/{Config.OWNER_USERNAME}")
 		],
                 [
@@ -750,7 +750,7 @@ if __name__ == "__main__":
         with userBot:
             userBot.send_message(
                 chat_id=int(LOGCHANNEL),
-                text="Bᴏᴛ ʙᴏᴏᴛᴇᴅ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴏᴜɴᴛ,\n\n  Tʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ <a href='https://t.me/NordBotz'>ᴛʜɪs ʀᴇᴘᴏ</a>",
+                text="Bᴏᴛ ʙᴏᴏᴛᴇᴅ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴏᴜɴᴛ,\n\n  Tʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ <a href='https://t.me/DevilServers'>ᴛʜɪs ʀᴇᴘᴏ</a>",
                 disable_web_page_preview=True,
             )
             user = userBot.get_me()
