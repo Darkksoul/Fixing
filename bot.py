@@ -492,7 +492,7 @@ async def about_handler(c: Client, m: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-			InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/DevilServers),
+			InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/DevilServers"),
 		        InlineKeyboardButton("🤔 Dᴇᴘʟᴏʏᴇᴅ ʙʏ", url=f"https://t.me/{Config.OWNER_USERNAME}")
 		],
                 [
