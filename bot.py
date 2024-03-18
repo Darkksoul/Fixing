@@ -719,7 +719,7 @@ async def makeButtons(c: Client, m: Message, db: dict):
                     ]
                 )
 
-    markup.append([InlineKeyboardButton("🗂 Mᴇʀɢᴇ ɴᴏᴡ @𝑵𝒐𝒓𝒅𝑩𝒐𝒕𝒛 ", callback_data="merge")])
+    markup.append([InlineKeyboardButton("🗂 Mᴇʀɢᴇ ɴᴏᴡ", callback_data="merge")])
     markup.append([InlineKeyboardButton("🚫 Cʟᴇᴀʀ ғɪʟᴇs", callback_data="cancel")])
     return markup
 
