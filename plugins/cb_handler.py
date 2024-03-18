@@ -52,7 +52,7 @@ async def callback_handler(c: Client, cb: CallbackQuery):
                         ),
                         InlineKeyboardButton("🌫️ Tᴏ ᴅʀɪᴠᴇ", callback_data="to_drive"),
                     ],
-                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @𝑵𝒐𝒓𝒅𝑩𝒐𝒕𝒛", callback_data="cancel")],
+                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @Devilservers", callback_data="cancel")],
                 ]
             ),
         )
@@ -76,14 +76,14 @@ async def callback_handler(c: Client, cb: CallbackQuery):
             return
         UPLOAD_TO_DRIVE.update({f"{cb.from_user.id}": True})
         await cb.message.edit(
-            text="Oᴋᴀʏ ɪ'ʟʟ ᴜᴘʟᴏᴀᴅ ᴛᴏ ᴅʀɪᴠᴇ\nDᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʀᴇɴᴀᴍᴇ? Dᴇғᴀᴜʟᴛ ғɪʟᴇ ɴᴀᴍᴇ ɪs **[@𝙽𝚘𝚛𝚍𝙱𝚘𝚝𝚣]_merged.mkv**",
+            text="Oᴋᴀʏ ɪ'ʟʟ ᴜᴘʟᴏᴀᴅ ᴛᴏ ᴅʀɪᴠᴇ\nDᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʀᴇɴᴀᴍᴇ? Dᴇғᴀᴜʟᴛ ғɪʟᴇ ɴᴀᴍᴇ ɪs **[@Devilservers]_merged.mkv**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("👆 Dᴇғᴀᴜʟᴛ", callback_data="rename_NO"),
                         InlineKeyboardButton("✍️ Rᴇɴᴀᴍᴇ", callback_data="rename_YES"),
                     ],
-                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @𝑵𝒐𝒓𝒅𝑩𝒐𝒕𝒛", callback_data="cancel")],
+                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @Devilservers", callback_data="cancel")],
                 ]
             ),
         )
@@ -130,8 +130,8 @@ async def callback_handler(c: Client, cb: CallbackQuery):
                 )
                 return
             await cb.message.edit(
-            text=f"Hɪ **⚡ I ᴀᴍ ᴀ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴍᴇʀɢᴇʀ ʙᴏᴛ\n\n😎 I ᴄᴀɴ ᴍᴇʀɢᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇs!, ᴀɴᴅ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ By @𝙽𝚘𝚛𝚍𝙱𝚘𝚝𝚣\n\n/help ғᴏʀ ʜᴏᴡ ᴛᴏ ᴜsᴇ\n\n**Oᴡɴᴇʀ: 🈲 @{Config.OWNER_USERNAME}**",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Owner", url="https://t.me/NordBotz"), InlineKeyboardButton("Movie Group", url="https://t.me/i_manjot_sidhu")]]),
+            text=f"Hɪ **⚡ I ᴀᴍ ᴀ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴍᴇʀɢᴇʀ ʙᴏᴛ\n\n😎 I ᴄᴀɴ ᴍᴇʀɢᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇs!, ᴀɴᴅ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ By @Devilservers\n\n/help ғᴏʀ ʜᴏᴡ ᴛᴏ ᴜsᴇ\n\n**Oᴡɴᴇʀ: 🈲 @{Config.OWNER_USERNAME}**",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Owner", url="https://t.me/Devilservers"), InlineKeyboardButton("Movie Group", url="https://t.me/DevilMWorld")]]),
             disable_web_page_preview=True
         )
             
@@ -146,7 +146,7 @@ async def callback_handler(c: Client, cb: CallbackQuery):
                         InlineKeyboardButton("🎞️ Vɪᴅᴇᴏ", callback_data="video"),
                         InlineKeyboardButton("📁 Fɪʟᴇ", callback_data="document"),
                     ],
-                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @𝑵𝒐𝒓𝒅𝑩𝒐𝒕𝒛", callback_data="cancel")],
+                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @Devilservers", callback_data="cancel")],
                 ]
             ),
         )
@@ -156,14 +156,14 @@ async def callback_handler(c: Client, cb: CallbackQuery):
     elif cb.data == "document":
         UPLOAD_AS_DOC.update({f"{cb.from_user.id}": True})
         await cb.message.edit(
-            text="Dᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʀᴇɴᴀᴍᴇ? Dᴇғᴀᴜʟᴛ ғɪʟᴇ ɴᴀᴍᴇ ɪs **[@𝙽𝚘𝚛𝚍𝙱𝚘𝚝𝚣]_merged.mkv**",
+            text="Dᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʀᴇɴᴀᴍᴇ? Dᴇғᴀᴜʟᴛ ғɪʟᴇ ɴᴀᴍᴇ ɪs **[@Devilservers]_merged.mkv**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("👆 Dᴇғᴀᴜʟᴛ", callback_data="rename_NO"),
                         InlineKeyboardButton("✍️ Rᴇɴᴀᴍᴇ", callback_data="rename_YES"),
                     ],
-                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @𝑵𝒐𝒓𝒅𝑩𝒐𝒕𝒛", callback_data="cancel")],
+                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @Devilservers", callback_data="cancel")],
                 ]
             ),
         )
@@ -172,14 +172,14 @@ async def callback_handler(c: Client, cb: CallbackQuery):
     elif cb.data == "video":
         UPLOAD_AS_DOC.update({f"{cb.from_user.id}": False})
         await cb.message.edit(
-            text="Dᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʀᴇɴᴀᴍᴇ? Dᴇғᴀᴜʟᴛ ғɪʟᴇ ɴᴀᴍᴇ ɪs **[@𝙽𝚘𝚛𝚍𝙱𝚘𝚝𝚣]_merged.mkv**",
+            text="Dᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʀᴇɴᴀᴍᴇ? Dᴇғᴀᴜʟᴛ ғɪʟᴇ ɴᴀᴍᴇ ɪs **[@Devilservers]_merged.mkv**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("👆 Dᴇғᴀᴜʟᴛ", callback_data="rename_NO"),
                         InlineKeyboardButton("✍️ Rᴇɴᴀᴍᴇ", callback_data="rename_YES"),
                     ],
-                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @𝑵𝒐𝒓𝒅𝑩𝒐𝒕𝒛", callback_data="cancel")],
+                    [InlineKeyboardButton("⛔ Cᴀɴᴄᴇʟ ⛔ @Devilservers", callback_data="cancel")],
                 ]
             ),
         )
@@ -202,7 +202,7 @@ async def callback_handler(c: Client, cb: CallbackQuery):
         user = UserSettings(cb.from_user.id, cb.from_user.first_name)
         if "YES" in cb.data:
             await cb.message.edit(
-                "Cᴜʀʀᴇɴᴛ ғɪʟᴇɴᴀᴍᴇ: **[@𝙽𝚘𝚛𝚍𝙱𝚘𝚝𝚣]_merged.mkv**\n\nSᴇɴᴅ ᴍᴇ ɴᴇᴡ ғɪʟᴇ ɴᴀᴍᴇ ᴡɪᴛʜᴏᴜᴛ ᴇxᴛᴇɴsɪᴏɴ: ʏᴏᴜ ʜᴀᴠᴇ 𝟷 ᴍɪɴᴜᴛᴇ"
+                "Cᴜʀʀᴇɴᴛ ғɪʟᴇɴᴀᴍᴇ: **[@Devilservers]_merged.mkv**\n\nSᴇɴᴅ ᴍᴇ ɴᴇᴡ ғɪʟᴇ ɴᴀᴍᴇ ᴡɪᴛʜᴏᴜᴛ ᴇxᴛᴇɴsɪᴏɴ: ʏᴏᴜ ʜᴀᴠᴇ 𝟷 ᴍɪɴᴜᴛᴇ"
             )
             res: Message = await c.listen(chat_id=cb.message.chat.id, filters=filters.text, listener_type=ListenerTypes.MESSAGE, timeout=120, user_id=cb.from_user.id)
             if res.text:
@@ -218,7 +218,7 @@ async def callback_handler(c: Client, cb: CallbackQuery):
             return
         if "NO" in cb.data:
             new_file_name = (
-                f"downloads/{str(cb.from_user.id)}/[@𝙽𝚘𝚛𝚍𝙱𝚘𝚝𝚣]_merged.mkv"
+                f"downloads/{str(cb.from_user.id)}/[@Devilservers]_merged.mkv"
             )
             if user.merge_mode == 1:
                 await mergeNow(c, cb, new_file_name)
