@@ -546,12 +546,11 @@ async def cancel_handler(c: Client, m: Message):
     Fsub = await ForceSub(c, m)
     if Fsub == 400:
         return
-    # Perform cancel action directly
-    # Add your cancel logic here
-    await m.reply_text(
-        text="Cancellation successful ❌",
-        quote=True
-    )
+    if await cancel_process():
+        await m.reply_text("Process canceled ❌", quote=True)
+    else:
+        await m.reply_text("No process to cancel.")
+
 
 
 
