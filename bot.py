@@ -551,9 +551,6 @@ async def cancel_handler(c: Client, m: Message):
     else:
         await m.reply_text("No process to cancel.")
 
-
-
-
 @mergeApp.on_message(filters.command(["deletethumbnail"]) & filters.private)
 async def delete_thumbnail(c: Client, m: Message):
     try:
