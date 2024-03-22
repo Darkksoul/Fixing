@@ -541,6 +541,19 @@ async def show_thumbnail(c: Client, m: Message):
         LOGGER.info(err)
         await m.reply_text(text="❌ Cᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ ɴᴏᴛ ғᴏᴜɴᴅ", quote=True)
 
+@mergeApp.on_message(filters.command(["cancel"]) & filters.private)
+async def cancel_handler(c: Client, m: Message):
+    Fsub = await ForceSub(c, m)
+    if Fsub == 400:
+        return
+    # Perform cancel action directly
+    # Add your cancel logic here
+    await m.reply_text(
+        text="Cancellation successful ❌",
+        quote=True
+    )
+
+
 
 @mergeApp.on_message(filters.command(["deletethumbnail"]) & filters.private)
 async def delete_thumbnail(c: Client, m: Message):
