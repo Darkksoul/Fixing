@@ -541,23 +541,20 @@ async def show_thumbnail(c: Client, m: Message):
         LOGGER.info(err)
         await m.reply_text(text="❌ Cᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ ɴᴏᴛ ғᴏᴜɴᴅ", quote=True)
 
-# Placeholder cancel_process function
-async def cancel_process():
-    # Add your cancellation logic here
-    return True  # Placeholder return value
-
-# Command handler for canceling the process
 @mergeApp.on_message(filters.command(["cancel"]) & filters.private)
 async def cancel_handler(c: Client, m: Message):
     Fsub = await ForceSub(c, m)
     if Fsub == 400:
         return
-    
-    # Perform cancel action directly
-    if await cancel_process():
-        await m.reply_text("Cancellation successful ❌", quote=True)
-    else:
-        await m.reply_text("No process to cancel.")
+    await m.reply_text(
+        text="""**Click To Cancel Button 
+Note:- You're Task Cancelled But Not Closed Download/Upload Status**""",
+        quote=True,
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("Click To Cancel ❌", callback_data="cancel")]]
+        ),
+    )
+
 
 @mergeApp.on_message(filters.command(["deletethumbnail"]) & filters.private)
 async def delete_thumbnail(c: Client, m: Message):
