@@ -11,7 +11,7 @@ async def metaEditor(c: Client, m: Message):
             caption = f"Custom Caption Here"
             
             # Update the metadata of the video file
-            await c.edit_message_caption(
+            await c.set_video_metadata(
                 chat_id=m.chat.id,
                 message_id=video_message.message_id,
                 caption=caption
@@ -22,4 +22,3 @@ async def metaEditor(c: Client, m: Message):
             await m.reply_text("Please reply to a video file to update its metadata.")
     except Exception as e:
         LOGGER.error(f"Error in metaEditor: {str(e)}")
-
