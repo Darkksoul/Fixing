@@ -1,14 +1,14 @@
 {
 	"name": "Telegram Video Merge Bot",
-	"description": "A Telegram Video Merge Bot in Pyrogram by @blvckangl",
+	"description": "A Telegram Video Merge Bot in Pyrogram by @DevilServers",
 	"keywords": [
 		"telegram",
 		"video",
 		"merge",
 		"bot"
 	],
-	"repository": "https://github.com/BLVCK-ANGEL/Merge-Bot",
-	"website": "https://telegram.dog/BLVCK-ANGEL",
+	"repository": "https://github.com/Darkksoul/Fixing",
+	"website": "https://t.me/Devilservers",
 	"stack": "container",
 	"env": {
 		"CONFIG_FILE_URL": {
