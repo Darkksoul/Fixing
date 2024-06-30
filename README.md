@@ -31,6 +31,8 @@
 ## Deploy(at your own risk) :
 <p><a href="https://heroku.com/deploy?template=https://github.com/Darkksoul/Fixing"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Darkksoul/Fixing&branch=web&name=devilvideomerge)
+</details>
 ### OR
 Goto `settings > actions > secret > New Repository Secret` <br>
 Add `HEROKU_EMAIL` <br>
